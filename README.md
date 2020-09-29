@@ -6,15 +6,16 @@ Pastikan git sudah terinstall di komputer anda,
 jika belum, panduannya bisa dilihat [disini](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).<br />
 
 ### Pemasangan
-Clone repository.<br />
+Clone repository.<br/>
+
 Jalankan perintah dibawah ini untuk mengambil repositori
 ```
-git clone https://github.com/Sigit-Wasis/React-Components-and-Props
+git clone https://github.com/Sigit-Wasis/React-Part1
 ```
 
 Masuk ke direktori project dengan menjalankan perintah berikut
 ```
-cd React-Components-and-Props
+cd React-Part1
 ```
 
 Memasang semua paket dependency dengan menjalankan perintah berikut
