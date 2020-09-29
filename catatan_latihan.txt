@@ -1,0 +1,11 @@
+simple table
+https://dev.to/abdulbasit313/an-easy-way-to-create-a-customize-dynamic-table-in-react-js-3igg
+
+component lifecycle
+https://reactjs.org/docs/state-and-lifecycle.html
+
+variable and const
+https://www.pluralsight.com/guides/how-to-use-variables-within-classes
+
+styling
+https://www.sitepoint.com/react-components-styling-options/
