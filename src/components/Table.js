@@ -61,49 +61,69 @@ class Table extends React.Component {
     render() {
         return <div className="body">
             <h1 id='title'>{this.props.title}</h1>
-            <table id='provinsis'>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>PROVINSI</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.renderTableData()}
-                </tbody>
-            </table>
-
-            <div style={styles.container}>
-
-                <form onSubmit={this.handleSubmit}>
-                    ID: 
-                    <input type="text" onChange={this.handleChange} name="id" />
-                    <span>&nbsp;</span> <span>&nbsp;</span>
-
-                    PROVINSI: 
-                    <input type="text" onChange={this.handleChange} name="provinsi" />
-                    <span>&nbsp;</span>
-                    
-                    <button>TAMBAH</button>
-                </form>
-
+            <div className="card">    
+                <table id='provinsis'>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PROVINSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderTableData()}
+                    </tbody>
+                </table>
             </div>
 
-            <div style={styles.container}>
-            Baru Saja ditambahkan:
-            <br></br>ID: <span> {this.state.addIdProvinsi.id } </span>
-            <br></br>PROVINSI: <span> {this.state.addIdProvinsi.provinsi } </span>
+            <div class="card">
+                <div class="container">
+                    <form onSubmit={this.handleSubmit}>
+
+                        <label for="ID">ID:</label>
+                        <input type="text" onChange={this.handleChange} name="id" />
+
+                        <label for="PROVINSI">PROVINSI:</label> 
+                        <input type="text" onChange={this.handleChange} name="provinsi" />
+                        
+                        <button>TAMBAH</button>
+                    </form>
+                </div>
             </div>
+
+            <div class="card">
+                <p>Data Baru Ditambahkan:</p>
+                <div class="container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PROVINSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{this.state.addIdProvinsi.id }</td>
+                            <td>{this.state.addIdProvinsi.provinsi }</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <h6>
+                <i>@embuncode 2020</i>
+            </h6>
         </div>;
     }
 }
 
-const styles = {
-    container: {
-        border: '1px solid black',
-        padding: '10px',
-        marginTop: '20px'
-    }
-};
+// const styles = {
+//     container: {
+//         border: '1px solid black',
+//         padding: '10px',
+//         marginTop: '20px'
+//     },
+// };
 
 export default Table;

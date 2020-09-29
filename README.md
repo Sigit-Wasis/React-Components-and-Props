@@ -9,12 +9,12 @@ jika belum, panduannya bisa dilihat [disini](https://git-scm.com/book/en/v2/Gett
 Clone repository.<br />
 Jalankan perintah dibawah ini untuk mengambil repositori
 ```
-git clone https://github.com/cooljar/belajarReactJsPart1.git
+git clone https://github.com/Sigit-Wasis/React-Components-and-Props
 ```
 
 Masuk ke direktori project dengan menjalankan perintah berikut
 ```
-cd belajarReactJsPart1
+cd React-Components-and-Props
 ```
 
 Memasang semua paket dependency dengan menjalankan perintah berikut
@@ -39,3 +39,5 @@ Buka browser dan ketikan alamat: http://localhost:3000
 
 ### Example Result
 ![Alt Text](https://media.giphy.com/media/wESUcNdQN0Fkzvu11t/giphy.gif)
+
+##### GOOD LUCK 
