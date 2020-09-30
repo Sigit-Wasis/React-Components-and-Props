@@ -75,14 +75,14 @@ class Table extends React.Component {
                 </table>
             </div>
 
-            <div class="card">
-                <div class="container">
+            <div className="card">
+                <div className="container">
                     <form onSubmit={this.handleSubmit}>
 
-                        <label for="ID">ID:</label>
+                        <label htmlFor="ID">ID:</label>
                         <input type="text" onChange={this.handleChange} name="id" />
 
-                        <label for="PROVINSI">PROVINSI:</label> 
+                        <label htmlFor="PROVINSI">PROVINSI:</label> 
                         <input type="text" onChange={this.handleChange} name="provinsi" />
                         
                         <button>TAMBAH</button>
@@ -90,9 +90,9 @@ class Table extends React.Component {
                 </div>
             </div>
 
-            <div class="card">
+            <div className="card">
                 <p>Data Baru Ditambahkan:</p>
-                <div class="container">
+                <div className="container">
 
                 <table>
                     <thead>
@@ -117,13 +117,5 @@ class Table extends React.Component {
         </div>;
     }
 }
-
-// const styles = {
-//     container: {
-//         border: '1px solid black',
-//         padding: '10px',
-//         marginTop: '20px'
-//     },
-// };
 
 export default Table;
